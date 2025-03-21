@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Soft light background */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);  /* Soft pastel gradient */
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    position: relative;
+    border-bottom: 5px solid #fff;
+}
+
+.hero-section .overlay {
+    background: rgba(255, 255, 255, 0.6);  /* Light overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+}
+
+/* Form Styles */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.candidate-form {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.candidate-form:hover {
+    transform: translateY(-5px);
+}
+
+.candidate-form h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group select, .input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 8px;
+    background-color: #fafafa;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.input-group select:focus, .input-group input:focus {
+    border: 1px solid #0072ff;
+    outline: none;
+}
+
+button {
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: #ff5f5f;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #0072ff;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 30vh;
+    }
+
+    .candidate-form {
+        width: 90%;
+        padding: 20px 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .candidate-form h2 {
+        font-size: 1.8rem;
+    }
+}
