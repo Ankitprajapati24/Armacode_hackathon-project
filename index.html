@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electify - Election Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="overlay"></div>
+        <h1 class="animated fadeIn">Welcome to <span class="highlight">IISER</span></h1>
+        <h2 class="animated slideInLeft">Election Year: 2025</h2>
+        <p class="animated fadeInUp">Empowering Students, Building Leadership</p>
+    </header>
+
+    <div class="main-container">
+        <div class="option-container admin">
+            <h2>Admin</h2>
+            <p>Manage elections and track votes</p>
+            <button class="animated pulse" onclick="window.location.href='admin-login.html'">Admin Login</button>
+        </div>
+
+        <div class="option-container student">
+            <h2>Student</h2>
+            <p>Vote for your representatives</p>
+            <button class="animated pulse" onclick="window.location.href='student-login.html'">Student Login</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact: iisercollege@domain.com | Terms and Conditions</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
